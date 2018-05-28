@@ -58,4 +58,4 @@ INSERT INTO movies (title, year, show_time) VALUES ('Avengers: Infinity War', 20
 
 1. Research how to delete multiple entries from your table in a single command.
 
-DELETE title, year FROM movies;
+DELETE FROM movies WHERE year < 2015;
