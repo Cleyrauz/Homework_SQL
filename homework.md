@@ -24,6 +24,7 @@ Use the supplied data as the source of data to answer the questions.  Copy the S
 
 1. Return ALL the data in the 'movies' table.
 SELECT * FROM movies ORDER BY id;
+
 id |                title                | year | show_time
 ----+-------------------------------------+------+-----------
  1 | Iron Man                            | 2008 | 23:00
@@ -48,6 +49,7 @@ id |                title                | year | show_time
 
 2. Return ONLY the name column from the 'people' table
 SELECT name FROM people;
+
 name          
 -----------------------
 Angelina Blyth
@@ -75,6 +77,7 @@ Cambel Millar
 
 3. Oh bother! Someone at CodeClan spelled Campbell's name wrong! Change it to reflect the proper spelling (change 'Cambel Millar' to 'Campbell Miller').
 UPDATE people SET name = 'Campbell Miller' WHERE name = 'Cambel Millar';
+
 name       
 -----------------
 Campbell Miller
@@ -82,6 +85,7 @@ Campbell Miller
 
 4. Return ONLY your name from the 'people' table.
 SELECT name FROM people WHERE name = 'Cleyra Uzcategui';
+
 name       
 ------------------
 Cleyra Uzcategui
@@ -89,6 +93,7 @@ Cleyra Uzcategui
 
 5. The cinema is showing 'Batman Begins', but Batman is DC, not Marvel! Delete the entry from the 'movies' table.
 DELETE FROM movies WHERE title = 'Batman Begins';
+
 id |                title                | year | show_time
 ----+-------------------------------------+------+-----------
  1 | Iron Man                            | 2008 | 23:00
@@ -139,6 +144,7 @@ John Mccollum
 
 7. Oh no! Nefarious G5 instructor Alan Russell has decided to hijack our movie evening! Remove him from the table of people.
 DELETE FROM people WHERE name = 'Alan Russell';
+
 name          
 -----------------------
 Angelina Blyth
@@ -166,6 +172,8 @@ John Mccollum
 
 8. The cinema has just heard that they will be holding an exclusive midnight showing of 'Avengers: Infinity War'!! Create a new entry in the 'movies' table to reflect this.
 INSERT INTO movies (title, year, show_time) VALUES ('Avengers: Infinity War', 2018, '00:00');
+
+
 id |                title                | year | show_time
 ----+-------------------------------------+------+-----------
  1 | Iron Man                            | 2008 | 23:00
@@ -191,6 +199,7 @@ id |                title                | year | show_time
 
 9. The cinema would also like to make the Guardian movies a back-to-back feature. Update the 'Guardians of the Galaxy' show time from 16:50 to 20:00
 UPDATE movies SET show_time = '20:00' WHERE show_time = '16:50';
+
 id |                title                | year | show_time
 ----+-------------------------------------+------+-----------
  1 | Iron Man                            | 2008 | 23:00
