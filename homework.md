@@ -63,3 +63,5 @@ DELETE FROM movies WHERE year < 2015;
 DELETE FROM movies WHERE show_time = '22:25';
 
 DELETE FROM movies WHERE show_time = '22:25' AND year = 2017;
+
+DELETE FROM movies WHERE title = 'Ant-Man' OR year = 2008;
