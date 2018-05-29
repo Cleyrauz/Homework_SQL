@@ -53,6 +53,10 @@ DELETE FROM people WHERE name = 'Alan Russell';
 
 INSERT INTO movies (title, year, show_time) VALUES ('Avengers: Infinity War', 2018, '00:00');
 
+9. The cinema would also like to make the Guardian movies a back-to-back feature. Update the 'Guardians of the Galaxy' show time from 16:50 to 20:00
+
+UPDATE movies SET show_time = '20:00' WHERE title = 'Guardians of the Galaxy';
+
 
 ## Extension
 
